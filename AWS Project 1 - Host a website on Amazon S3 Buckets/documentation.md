@@ -19,7 +19,7 @@ To begin, I created a new S3 bucket to store my website files. Amazon S3 require
 
 Creating the bucket itself was a fast process, taking less than 2 minutes. I just followed the on-screen prompts and selected the default settings for the bucket. It was quite simple and didn't involve much setup.
 
-![Website Screenshot](AWS\ Project\ 1\ -\ Host\ a\ Website\ on\ Amazon\ S3\ Buckets/images/Screenshot\ 2024-11-22\ at\ 2.49.54\ PM.png)
+![Website Screenshot](images/Screenshot\ 2024-11-22\ at\ 2.49.54\ PM.png)
 
 
 
