@@ -16,8 +16,7 @@ Steps Overview
 1) Create an S3 Bucket: 
 Set up a new S3 bucket to store your data. This involves specifying a unique bucket name and selecting the appropriate region for your storage needs.
 
-![Website Screenshot](images/SS1.png)
-//pic1
+![Website Screenshot](images/S1.png)
 
 2)Configure Bucket Settings: 
 Adjust the settings for your S3 bucket to enhance security and management, including enabling versioning and server access logging.
