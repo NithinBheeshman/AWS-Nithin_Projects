@@ -3,18 +3,20 @@ AWS Project 2 - Data Visualisation using Amazon Quicksite
 In this project, we will demonstrate how to utilize Amazon S3 for storing and organizing data and Amazon QuickSight for creating interactive data visualizations and dashboards. The process involves creating an S3 bucket, uploading data, configuring bucket policies, and using QuickSight to connect to the S3 data and generate insightful visualizations.
 
 Introduction to S3
+
 Amazon Simple Storage Service (Amazon S3) is a scalable object storage service that provides secure, durable, and highly available storage for a wide range of data types. It allows you to store and retrieve any amount of data at any time, making it ideal for a variety of use cases including backup and restore, data archiving, and content distribution.
 
 Introduction to QuickSight
+
 Amazon QuickSight is a fast, cloud-powered business intelligence service that makes it easy to create and publish interactive dashboards. It allows you to connect to various data sources, perform ad-hoc analysis, and share insights with your organization, all while leveraging the scalability and flexibility of AWS.
 
-Introduction
-In this project, we will walk through the steps to set up an Amazon S3 bucket, configure its settings, and upload data. We will then use Amazon QuickSight to connect to the S3 data, create visualizations, and build interactive dashboards. By the end of this project, you will have a solid understanding of how to leverage S3 for data storage and QuickSight for data analysis and visualization.
 
 Steps Overview
 
 1) Create an S3 Bucket: 
 Set up a new S3 bucket to store your data. This involves specifying a unique bucket name and selecting the appropriate region for your storage needs.
+
+![Website Screenshot](images/SS1.png)
 //pic1
 
 2)Configure Bucket Settings: 
