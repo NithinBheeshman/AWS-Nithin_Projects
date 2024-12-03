@@ -1,3 +1,5 @@
+AWS Project 2 - Data Visualisation using Amazon Quicksite
+
 In this project, we will demonstrate how to utilize Amazon S3 for storing and organizing data and Amazon QuickSight for creating interactive data visualizations and dashboards. The process involves creating an S3 bucket, uploading data, configuring bucket policies, and using QuickSight to connect to the S3 data and generate insightful visualizations.
 
 Introduction to S3
@@ -10,15 +12,38 @@ Introduction
 In this project, we will walk through the steps to set up an Amazon S3 bucket, configure its settings, and upload data. We will then use Amazon QuickSight to connect to the S3 data, create visualizations, and build interactive dashboards. By the end of this project, you will have a solid understanding of how to leverage S3 for data storage and QuickSight for data analysis and visualization.
 
 Steps Overview
-Create an S3 Bucket: Set up a new S3 bucket to store your data. This involves specifying a unique bucket name and selecting the appropriate region for your storage needs.
-Configure Bucket Settings: Adjust the settings for your S3 bucket to enhance security and management, including enabling versioning and server access logging.
+
+1) Create an S3 Bucket: 
+Set up a new S3 bucket to store your data. This involves specifying a unique bucket name and selecting the appropriate region for your storage needs.
+//pic1
+
+2)Configure Bucket Settings: 
+Adjust the settings for your S3 bucket to enhance security and management, including enabling versioning and server access logging.
 Upload Data: Organize and upload your data into the S3 bucket. Use folders to maintain a logical structure and set object metadata for better data management.
-Set Bucket Policies: Define bucket policies to control access permissions. This includes setting up IAM policies and configuring public access settings where necessary.
-Connect QuickSight to S3: Link your Amazon QuickSight account to the S3 bucket to access the stored data. This involves setting up data sources within QuickSight.
-Create Visualizations: Use QuickSight to create interactive visualizations from your data. Choose appropriate chart types and configure them to effectively present your data insights.
-Build Dashboards: Combine multiple visualizations into comprehensive dashboards in QuickSight. Apply filters and drill-down options to enhance data interaction.
-Share Dashboards: Share your QuickSight dashboards with other users, assigning appropriate access permissions to ensure secure and controlled data sharing.
-Questions and Answers
+
+
+3)Set Bucket Policies: 
+Define bucket policies to control access permissions. This includes setting up IAM policies and configuring public access settings where necessary.
+
+
+4)Connect QuickSight to S3: 
+Link your Amazon QuickSight account to the S3 bucket to access the stored data. This involves setting up data sources within QuickSight.
+//pic2,3
+
+5)Create Visualizations: 
+Use QuickSight to create interactive visualizations from your data. Choose appropriate chart types and configure them to effectively present your data insights.
+ //pic4
+
+6)Build Dashboards: 
+Combine multiple visualizations into comprehensive dashboards in QuickSight. Apply filters and drill-down options to enhance data interaction.
+//pic5
+
+7)Share Dashboards: 
+Share your QuickSight dashboards with other users, assigning appropriate access permissions to ensure secure and controlled data sharing.
+
+
+Extras:
+
 Bucket Settings:
 
 Why is it important to configure versioning for your bucket?
