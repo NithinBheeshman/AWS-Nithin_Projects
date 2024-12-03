@@ -29,15 +29,24 @@ Define bucket policies to control access permissions. This includes setting up I
 
 4)Connect QuickSight to S3: 
 Link your Amazon QuickSight account to the S3 bucket to access the stored data. This involves setting up data sources within QuickSight.
-//pic2,3
+
+
+![Website Screenshot](Images/S2.png)
+
+
+![Website Screenshot](Images/S3.png)
+
 
 5)Create Visualizations: 
 Use QuickSight to create interactive visualizations from your data. Choose appropriate chart types and configure them to effectively present your data insights.
- //pic4
+
+ ![Website Screenshot](Images/S4.png)
+ 
 
 6)Build Dashboards: 
 Combine multiple visualizations into comprehensive dashboards in QuickSight. Apply filters and drill-down options to enhance data interaction.
-//pic5
+
+![Website Screenshot](Images/S5.png)
 
 7)Share Dashboards: 
 Share your QuickSight dashboards with other users, assigning appropriate access permissions to ensure secure and controlled data sharing.
