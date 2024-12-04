@@ -86,7 +86,7 @@ Creating Visualizations in QuickSight:
 
 What types of data sources can QuickSight connect to?
 
-Answer: QuickSight can connect to a variety of data sources including S3, RDS, Redshift, Athena, various databases (MySQL, PostgreSQL, SQL Server), and third-party services such as Salesforce.
+QuickSight can connect to a variety of data sources including S3, RDS, Redshift, Athena, various databases (MySQL, PostgreSQL, SQL Server), and third-party services such as Salesforce.
 How does QuickSight ensure the data is up-to-date in visualizations?
 Answer: QuickSight ensures data is up-to-date in visualizations by allowing scheduled data refreshes. You can set up refresh schedules to automatically update the data at specified intervals, ensuring that the visualizations reflect the most current data.
 Creating Dashboards:
