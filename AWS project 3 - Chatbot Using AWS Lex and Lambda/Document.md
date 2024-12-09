@@ -24,7 +24,7 @@ Creating the Initial BankerBot Setup
         * Idle session timeout: Keep the default of 5 minutes.
     * Select Next and then Done.
 
-  ![Website Screenshot](Images/S1.png)
+  ![Website Screenshot](images/S1.png)
    
 2. Customize the WelcomeIntent:
     * Under Intent details, name it WelcomeIntent and add a description.
