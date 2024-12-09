@@ -32,16 +32,28 @@ Creating the Initial BankerBot Setup
     * Scroll down to Closing response and enter the message:
         * "Hi! I'm BB, the Banking Bot. How can I help you today?"
     * Save and build the intent.
+
+    ![Website Screenshot](images/S2.png)
+
+
 3. Customize the FallbackIntent:
     * Navigate to FallbackIntent.
     * Replace the default message with:
         * "Sorry, I am having trouble understanding. Can you describe what you'd like to do in a few words? I can help you find your account balance, transfer funds, and make a payment."
     * Save and build the intent.
+  
+  ![Website Screenshot](images/S3.png)
+
+
 4. Create the accountType Custom Slot:
     * Choose Slot types from the navigation panel.
     * Add a new slot type named accountType.
     * Enter the values: Checking, Savings, Credit, and add synonyms for Credit (e.g., credit card, visa, mastercard).
     * Save the slot type.
+
+    ![Website Screenshot](images/S4.png)
+
+
 5. Create the CheckBalance Intent:
     * Add a new intent named CheckBalance with the description "Intent to check the balance in the specified account type."
     * Add sample utterances like "What's my balance?".
@@ -49,15 +61,48 @@ Creating the Initial BankerBot Setup
         * accountType: Prompt - "For which account would you like your balance?"
         * dateOfBirth: Prompt - "For verification purposes, what is your date of birth?"
     * Save and build the intent.
-6. Connect AWS Lambda with Amazon Lex:
+
+    ![Website Screenshot](images/S5.png)
+
+
+   ![Website Screenshot](images/S6.png)
+
+
+7. Connect AWS Lambda with Amazon Lex:
     * Create a Lambda function named BankingBotEnglish using Python 3.12.
     * Copy and deploy the provided source code.
     * In Lex, associate this Lambda function with your CheckBalance intent.
     * Enable the Lambda fulfillment for the intent and save.
-7. Implement Context Carryover:
+  
+  ![Website Screenshot](images/S7.png)
+
+
+8. Implement Context Carryover:
     * Create an output context in the CheckBalance intent named contextCheckBalance with a timeout of 5 turns or 90 seconds.
     * Create a new intent FollowupCheckBalance using the context tag to carry over the dateOfBirth slot value.
     * Connect the Lambda function to the FollowupCheckBalance intent and enable fulfillment.
+  
+  ![Website Screenshot](images/S8.png)
+
+  
+  ![Website Screenshot](images/S9.png)
+
+  
+  ![Website Screenshot](images/S10.png)
+
+  
+  ![Website Screenshot](images/S11.png)
+
+
+  
+  ![Website Screenshot](images/S12.png)
+
+  
+  ![Website Screenshot](images/S13.png)
+
+  
+  ![Website Screenshot](images/S14.png)
+
 
 Creating the TransferFunds Intent and Exploring Amazon Lex Features
 1. Create the TransferFunds Intent:
@@ -71,9 +116,19 @@ Creating the TransferFunds Intent and Exploring Amazon Lex Features
         * Decline response: "The transfer has been cancelled."
         * Closing response: "The transfer is complete. {transferAmount} should now be available in your {targetAccountType} account."
     * Save and build the intent.
+     
+  ![Website Screenshot](images/S15.png)
+
+  
+  ![Website Screenshot](images/S16.png)
+
+
 2. Explore Cool Features in Amazon Lex:
     * Conversation Flow:
         * At the top of the TransferFunds intent page, expand the Conversation flow panel to see an example conversation flow.
     * Visual Builder:
         * Select the Visual builder button at the bottom bar of your screen to see a visual representation of the intent you have just built.
+
+  
+  ![Website Screenshot](images/S17.png)
 
