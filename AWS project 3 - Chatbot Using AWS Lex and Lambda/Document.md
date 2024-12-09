@@ -23,6 +23,9 @@ Creating the Initial BankerBot Setup
         * COPPA: Select No.
         * Idle session timeout: Keep the default of 5 minutes.
     * Select Next and then Done.
+
+  ![Website Screenshot](Images/S1.png)
+   
 2. Customize the WelcomeIntent:
     * Under Intent details, name it WelcomeIntent and add a description.
     * Add sample utterances such as "Hi", "Hello", "Good morning".
