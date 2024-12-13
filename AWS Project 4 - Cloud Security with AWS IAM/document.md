@@ -13,13 +13,41 @@ IAM enables us to securely control access to AWS services and resources. Through
 
 Instructions:
 
+
 Create an IAM Policy:
-We start by creating an IAM policy that grants the intern access to the development EC2 instance, while restricting access to the production instance. The policy will allow actions like starting, stopping, and describing the development instance, but will deny actions such as creating or deleting tags.
+
+Begin by creating an IAM policy that specifies the intern’s access to the development EC2 instance, while restricting access to the production EC2 instance.
+This policy will allow the intern to perform actions such as starting, stopping, and describing the development instance.
+Additionally, the policy will deny certain actions, such as creating or deleting tags, to prevent the intern from making unauthorized changes.
+
+
 Create an AWS Account Alias:
-To make it easier for the intern to log into the AWS console, we create an AWS account alias. This provides a user-friendly sign-in URL for the intern, making it simpler to access the AWS Management Console.
+
+
+To facilitate a more user-friendly experience, create an AWS account alias.
+The alias replaces the default account ID-based login URL with a more memorable URL, such as nextwork-alias-yourname, making it easier for the intern to access the AWS Management Console.
+This alias will help avoid the need for sharing long and complex account IDs.
+
+
 Create IAM User Groups and Users:
-We set up a dedicated IAM user group, "nextwork-dev-group," and assign the permissions related to the development environment to this group. Then, we create a new IAM user for the intern, associating them with this group to ensure they have the correct permissions.
+
+
+Create a dedicated IAM user group named "nextwork-dev-group" and associate it with the IAM policy that grants access to the development environment.
+This user group allows easy permission management for any future interns by grouping them together under the same set of permissions.
+Next, create a new IAM user for the intern, naming it nextwork-dev-yourname, and assign this user to the previously created user group, ensuring they inherit the appropriate permissions for accessing the development instance.
+
+
 Test the Intern’s Access:
-After setting up the intern’s user account and permissions, we log in as the intern using the IAM credentials. We test access to both the development and production EC2 instances to ensure the intern only has the expected permissions for the development instance.
+
+
+After setting up the intern’s IAM user and permissions, log in using the intern’s credentials.
+Test access by attempting to access both the development and production EC2 instances.
+Ensure that the intern can only access the development instance and cannot interact with the production environment. This helps verify that the policy restrictions are correctly enforced.
+
+
 Verify Access Restrictions:
-Finally, we test the intern’s ability to perform actions on the EC2 instances. We attempt to stop both the production and development instances. The intern should be unable to stop the production instance, but will be able to stop the development instance, confirming that the permissions are set correctly.
+
+
+Finally, perform tests to confirm that the intern cannot perform actions outside of their assigned permissions.
+Attempt to stop the production instance. The intern should not have permission to stop the production instance, and an Access Denied message should appear.
+Next, try to stop the development instance. The intern should successfully be able to stop it, confirming that they have the correct permissions for the development environment while being restricted from making changes to production resources.
