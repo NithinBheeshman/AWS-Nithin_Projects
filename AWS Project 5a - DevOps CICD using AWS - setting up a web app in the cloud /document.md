@@ -88,13 +88,7 @@ Step 7: Connect VSCode with Your EC2 Instance
 
 Final Step: Edit index.jsp
 1. Open index.jsp Navigate to the file located at src/main/webapp/index.jsp to edit the main page of your web app.
-2. Modify the file Replace the existing code with a simple greeting message and save the changes: html Copy code   <html>
-3. <body>
-4. <h2>Hello {YOUR NAME}!</h2>
-5. <p>This is my NextWork web application working!</p>
-6. </body>
-7. </html>
-  
+2. Modify the file Replace the existing code with a simple greeting message and save the changes
 Save the changes Press Command/Ctrl + S to save the modified index.jsp file with your new content.
 
 In this project, we successfully set up a basic web application hosted on an Amazon EC2 instance. We launched the EC2 instance, connected to it via SSH, and installed the necessary tools like Java and Maven to support the application. After creating a simple web app using Maven, we connected VSCode to our EC2 instance for convenient file editing and deployed the app.
