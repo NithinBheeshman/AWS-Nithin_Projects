@@ -31,7 +31,7 @@ The alias replaces the default account ID-based login URL with a more memorable 
 This alias will help avoid the need for sharing long and complex account IDs.
 
 
-  ![Website Screenshot](images/S1.png)
+  ![Website Screenshot](images/S2.png)
 
 
 
@@ -43,7 +43,7 @@ This user group allows easy permission management for any future interns by grou
 Next, create a new IAM user for the intern, naming it nextwork-dev-yourname, and assign this user to the previously created user group, ensuring they inherit the appropriate permissions for accessing the development instance.
 
 
-  ![Website Screenshot](images/S1.png)
+  ![Website Screenshot](images/S3.png)
 
 
 
@@ -55,7 +55,7 @@ Test access by attempting to access both the development and production EC2 inst
 Ensure that the intern can only access the development instance and cannot interact with the production environment. This helps verify that the policy restrictions are correctly enforced.
 
 
-  ![Website Screenshot](images/S1.png)
+  ![Website Screenshot](images/S4.png)
 
 
 Verify Access Restrictions:
@@ -66,5 +66,5 @@ Attempt to stop the production instance. The intern should not have permission t
 Next, try to stop the development instance. The intern should successfully be able to stop it, confirming that they have the correct permissions for the development environment while being restricted from making changes to production resources.
 
 
-  ![Website Screenshot](images/S1.png)
+  ![Website Screenshot](images/S5.png)
 
