@@ -27,6 +27,10 @@ Step 1: Launch an EC2 Instance
     * Security Group: Open necessary ports like SSH (22), HTTP (80), and HTTPS (443) to allow access.
 4. Launch the Instance Click "Launch" to initialize the instance, then note the Public IPv4 DNS for SSH connection.
 
+  ![Website Screenshot](images/S1.png)
+
+![Website Screenshot](images/S2.png)
+
 
 
 Step 2: Connect to Your EC2 Instance
@@ -34,6 +38,10 @@ Step 2: Connect to Your EC2 Instance
 2. Navigate to the directory containing your .pem file Go to the folder where your private key (.pem file) is stored to use it for authentication.
 3. Modify the permissions of your .pem file Run chmod 400 nextwork-keypair.pem to secure the key and ensure only you can access it.
 4. Connect to your EC2 instance via SSH Run the SSH command (ssh -i "nextwork-keypair.pem" ec2-user@[YOUR PUBLIC IPV4 DNS]) to log in securely to the EC2 instance.
+
+![Website Screenshot](images/S3.png)
+
+  ![Website Screenshot](images/S4.png)
 
 
 
@@ -48,6 +56,7 @@ Step 4: Install Maven
 1. Install Maven Run sudo yum install maven -y to install Maven, a build automation tool used for Java applications.
 2. Verify the installation Run mvn -version to confirm that Maven is correctly installed.
 
+  
 
 
 Step 5: Create a Directory for Your Web App
@@ -61,12 +70,20 @@ Step 6: Create the Application
 2. Confirm successful project creation Look for the "BUILD SUCCESS" message in the terminal to ensure the app was created successfully.
 
 
+![Website Screenshot](images/S5.png)
+
+  ![Website Screenshot](images/S6.png)
+
+
 Step 7: Connect VSCode with Your EC2 Instance
 1. Open VSCode on your local machine Launch VSCode to edit your code locally while interacting with your EC2 instance.
 2. Install the Remote - SSH extension Install the "Remote - SSH" extension in VSCode to connect to your EC2 instance from within the editor.
 3. Set up a connection to your EC2 instance Click the Remote-SSH icon, then add the SSH host using the command: ssh -i /path/to/nextwork-keypair.pem ec2-user@[YOUR PUBLIC IPV4 DNS] to securely connect to your EC2 instance.
 4. Open your web app’s files In VSCode, select "Open Folder" and navigate to /home/ec2-user/nextwork-web-project to open the project folder stored on your EC2 instance.
 5. Trust the files When prompted, click “Yes, I trust the authors” to allow VSCode to work with the files.
+
+
+  ![Website Screenshot](images/S7.png)
 
 
 Final Step: Edit index.jsp
