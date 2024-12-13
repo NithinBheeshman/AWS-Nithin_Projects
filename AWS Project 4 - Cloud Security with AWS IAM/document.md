@@ -31,7 +31,7 @@ The alias replaces the default account ID-based login URL with a more memorable 
 This alias will help avoid the need for sharing long and complex account IDs.
 
 
-  ![Website Screenshot](images/S2.png)
+ 
 
 
 
@@ -43,6 +43,9 @@ This user group allows easy permission management for any future interns by grou
 Next, create a new IAM user for the intern, naming it nextwork-dev-yourname, and assign this user to the previously created user group, ensuring they inherit the appropriate permissions for accessing the development instance.
 
 
+ ![Website Screenshot](images/S2.png)
+
+ 
   ![Website Screenshot](images/S3.png)
 
 
@@ -67,4 +70,6 @@ Next, try to stop the development instance. The intern should successfully be ab
 
 
   ![Website Screenshot](images/S5.png)
+
+  ![Website Screenshot](images/S6.png)
 
