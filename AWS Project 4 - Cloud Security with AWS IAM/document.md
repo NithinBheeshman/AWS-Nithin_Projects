@@ -20,6 +20,8 @@ Begin by creating an IAM policy that specifies the intern’s access to the deve
 This policy will allow the intern to perform actions such as starting, stopping, and describing the development instance.
 Additionally, the policy will deny certain actions, such as creating or deleting tags, to prevent the intern from making unauthorized changes.
 
+  ![Website Screenshot](images/S1.png)
+
 
 Create an AWS Account Alias:
 
@@ -27,6 +29,10 @@ Create an AWS Account Alias:
 To facilitate a more user-friendly experience, create an AWS account alias.
 The alias replaces the default account ID-based login URL with a more memorable URL, such as nextwork-alias-yourname, making it easier for the intern to access the AWS Management Console.
 This alias will help avoid the need for sharing long and complex account IDs.
+
+
+  ![Website Screenshot](images/S1.png)
+
 
 
 Create IAM User Groups and Users:
@@ -37,6 +43,10 @@ This user group allows easy permission management for any future interns by grou
 Next, create a new IAM user for the intern, naming it nextwork-dev-yourname, and assign this user to the previously created user group, ensuring they inherit the appropriate permissions for accessing the development instance.
 
 
+  ![Website Screenshot](images/S1.png)
+
+
+
 Test the Intern’s Access:
 
 
@@ -45,9 +55,16 @@ Test access by attempting to access both the development and production EC2 inst
 Ensure that the intern can only access the development instance and cannot interact with the production environment. This helps verify that the policy restrictions are correctly enforced.
 
 
+  ![Website Screenshot](images/S1.png)
+
+
 Verify Access Restrictions:
 
 
 Finally, perform tests to confirm that the intern cannot perform actions outside of their assigned permissions.
 Attempt to stop the production instance. The intern should not have permission to stop the production instance, and an Access Denied message should appear.
 Next, try to stop the development instance. The intern should successfully be able to stop it, confirming that they have the correct permissions for the development environment while being restricted from making changes to production resources.
+
+
+  ![Website Screenshot](images/S1.png)
+
