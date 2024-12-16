@@ -45,6 +45,8 @@ Navigate into the cloned repository:
 cd your-repo-name
 
 
+![Website Screenshot](images/S2.png)
+
 Step 4: Make Initial Commit and Push
 
 Create a new file named index.jsp in the repository:
@@ -60,6 +62,8 @@ Push the commit to the remote repository:
 git push -u origin master
 
 
+![Website Screenshot](images/S3.png)
+
 Step 5: Set Up Your Git Identity
 
 
@@ -70,6 +74,9 @@ git config --global user.name "Your Name"
 Set your Git email. 
 Replace you@nextwork.org with your actual email address: 
 git config --global user.email you@nextwork.org
+
+
+![Website Screenshot](images/S4.png)
 
 
 Step 6: Set Up a GitHub Token
@@ -87,6 +94,9 @@ Run: git push -u origin master
 Enter your GitHub username. When prompted for a password, paste in your token and press Enter.
 Go to your GitHub repository in your browser and refresh the page to see your web app files and commit message.
 
+![Website Screenshot](images/S5.png)
+
+![Website Screenshot](images/S6.png)
 
 Step 7: Your Second Commit
 In VS Code, find index.jsp in your file navigator. 
@@ -108,3 +118,5 @@ Push the changes: git push
 If prompted, enter your usernameand token again.
 Go to your GitHub repository in your browser and refresh the page to see the updated index.jsp.
 
+
+![Website Screenshot](images/S7.png)
