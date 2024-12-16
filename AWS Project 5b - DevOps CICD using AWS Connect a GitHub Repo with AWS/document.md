@@ -1,6 +1,11 @@
 Connect a GitHub Repo with AWS
 
+Introduction
+In this project, we are aiming to establish a seamless workflow for developing, committing, and deploying web applications using an AWS EC2 instance and GitHub. By connecting our local development environment to a remote cloud repository, we can efficiently manage version control and collaborative coding. This workflow ensures that our changes are consistently tracked, reviewed, and integrated, facilitating smooth development processes and robust application deployment.
 
+
+Recap of the Previous Project
+In the previous project, titled "AWS Project 5a - DevOps CI/CD Setting Up a Web App in the Cloud," we embarked on the initial step of a seven-project series aimed at creating a Continuous Integration and Continuous Deployment (CI/CD) pipeline using AWS services. The primary objective was to set up a web application in the cloud using Amazon EC2. This involved launching an EC2 instance, connecting to it via SSH, and configuring the instance with essential software like Java and Maven to generate a basic web app. Additionally, we set up our development environment by connecting Visual Studio Code (VSCode) remotely to the EC2 instance, enabling us to edit and manage application files effectively. This foundational project established the groundwork for implementing more advanced DevOps practices in subsequent projects.
 
 Step 1: Connect to Your EC2 Instance
 
