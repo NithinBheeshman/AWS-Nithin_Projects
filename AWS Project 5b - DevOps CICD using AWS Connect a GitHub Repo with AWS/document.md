@@ -1,9 +1,15 @@
+Connect a GitHub Repo with AWS
+
 
 
 Step 1: Connect to Your EC2 Instance
 
 Launch VS Code and open a new terminal.
-Use the SSH command to connect to your EC2 instance. Replace ec2-user and your-ec2-instance-public-ip with your EC2 username and public IP address: ssh ec2-user@your-ec2-instance-public-ip
+Use the SSH command to connect to your EC2 instance. 
+
+Replace ec2-user and your-ec2-instance-public-ip with your EC2 username and public IP address: 
+ssh ec2-user@your-ec2-instance-public-ip
+
 Once connected, you should see the terminal prompt change to indicate you're now operating on the EC2 instance.
 
 
@@ -35,7 +41,7 @@ cd your-repo-name
 Step 4: Make Initial Commit and Push
 
 Create a new file named index.jsp in the repository:
-echo '<html><body><h1>This is my NextWork web application working!</h1></body></html>' > src/main/webapp/index.jsp
+ "h1" This is my NextWork web application working! "/h1" > src/main/webapp/index.jsp
 
 Stage the new file: 
 git add src/main/webapp/index.jsp
