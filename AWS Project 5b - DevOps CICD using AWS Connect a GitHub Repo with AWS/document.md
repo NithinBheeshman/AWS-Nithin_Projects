@@ -18,6 +18,8 @@ ssh ec2-user@your-ec2-instance-public-ip
 Once connected, you should see the terminal prompt change to indicate you're now operating on the EC2 instance.
 
 
+![Website Screenshot](images/S1.png)
+
 Step 2: Install Git
 
 Update the package list to ensure your package list is up to date:
